@@ -2,8 +2,8 @@
     document.getElementById('guess-form').addEventListener("submit", compareUserGuess);
     function compareUserGuess(event) {
         event.preventDefault();
-        var secretNumber:number  =  generateSecretNumber();
-        var userNumber :number = (<HTMLInputElement>document.getElementById('guess')).value;
+        const secretNumber:number  =  generateSecretNumber();
+        const userNumber :number  = Number((<HTMLInputElement>document.getElementById('guess')).value);
         if (secretNumber == userNumber) {
             alert("Awesome! You number " + userNumber + " was correct. You can be named many things, hungry not being one of them.");
         }
