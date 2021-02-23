@@ -11,6 +11,7 @@
             alert("Awesome! You number " + userNumber + " was correct. You can be named many things, hungry not being one of them.");
         } else {
             alert("Bummer... You guessed " + userNumber + " and the secret number was " + secretNumber + ".");
+            console.log("todo");
         }
     }
 
